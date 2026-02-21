@@ -10,19 +10,17 @@ links:
 featured: true
 ---
 
-## One-line takeaway
+## What's this paper about?
 Big transportation projects can generate measurable productivity gains, not just travel-time savings.
 
-## Question
-When governments evaluate urban transportation megaprojects, are they missing broader productivity effects that matter for long-run welfare and growth?
+The core question is whether standard project evaluation misses broader productivity effects that matter for long-run growth and welfare.
 
-## Method
-This paper develops and applies an urban transportation-economics framework to estimate productivity impacts linked to major network investments. It connects transport system changes to wider economic outcomes rather than stopping at direct mobility metrics.
+## How we studied it and what we found
+This paper develops and applies an urban transportation-economics framework to estimate productivity impacts from major network investments, instead of stopping at direct mobility metrics.
 
-## Main findings (plain English)
 - Benefits are broader than commute-time improvements.
 - Productivity channels can materially affect total project value.
 - Ignoring these channels can understate returns from major infrastructure investments.
 
-## Why this matters
+## Why you should care
 If appraisal frameworks only count narrow travel metrics, decision-makers may underinvest in projects with large economy-wide payoffs. This paper supports a more complete cost-benefit lens for major urban transport policy.

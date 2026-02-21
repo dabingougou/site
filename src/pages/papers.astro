@@ -31,6 +31,12 @@ const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
               {' · '}
               {p.data.year}
             </span>
+            {p.data.links?.paper && (
+              <>
+                <br />
+                <a href={p.data.links.paper} target="_blank" rel="noopener noreferrer">Publisher page</a>
+              </>
+            )}
             <br />
             <span>{p.data.summary}</span>
           </li>

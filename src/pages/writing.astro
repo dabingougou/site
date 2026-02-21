@@ -1,0 +1,6 @@
+---
+import '../styles/global.css';
+import { getCollection } from 'astro:content';
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+---
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Writing</title></head><body><main class="container"><h1>Writing</h1><ul>{posts.map((p) => (<li><strong>{p.data.title}</strong> — {p.data.summary}</li>))}</ul><a href="/">Back home</a></main></body></html>

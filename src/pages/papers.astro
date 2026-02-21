@@ -18,11 +18,21 @@ const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
   <body>
     <main class="container">
       <h1>Papers</h1>
-      <p>Research, but explained like a human.</p>
+      <p>These are papers I’ve worked on — quick, plain-English summaries included.</p>
       <ul>
         {sorted.map((p) => (
           <li>
-            <a href={href(`papers/${p.slug}/`)}><strong>{p.data.title}</strong></a> ({p.data.year}) — {p.data.summary}
+            <a href={href(`papers/${p.slug}/`)}><strong>{p.data.title}</strong></a>
+            <br />
+            <span>
+              {(p.data.authors?.length ? p.data.authors.join(', ') : 'Authors TBD')}
+              {' · '}
+              {p.data.venue || 'Venue TBD'}
+              {' · '}
+              {p.data.year}
+            </span>
+            <br />
+            <span>{p.data.summary}</span>
           </li>
         ))}
       </ul>

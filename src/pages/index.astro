@@ -1,11 +1,31 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css';
 ---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Huibin Chang</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Hi, I’m Huibin 👋</h1>
+      <p>
+        This is my little corner of the internet: projects, notes, experiments,
+        and occasional overthinking.
+      </p>
+      <nav>
+        <a href="/about">About</a> ·
+        <a href="/projects">Projects</a> ·
+        <a href="/writing">Writing</a> ·
+        <a href="/media">Media</a>
+      </nav>
 
-<Layout>
-	<Welcome />
-</Layout>
+      <h2>Now</h2>
+      <p>
+        Working at the intersection of economics, data, and AI product work.
+        Also trying to keep this site useful without making it look like a slide deck.
+      </p>
+    </main>
+  </body>
+</html>

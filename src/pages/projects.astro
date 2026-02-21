@@ -3,4 +3,4 @@ import '../styles/global.css';
 import { getCollection } from 'astro:content';
 const projects = await getCollection('projects');
 ---
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Projects</title></head><body><main class="container"><h1>Projects</h1><ul>{projects.map((p) => (<li><strong>{p.data.title}</strong> — {p.data.summary}</li>))}</ul><a href="/">Back home</a> · <a href="/media">Media</a></main></body></html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Projects</title></head><body><main class="container"><h1>Projects</h1><ul>{projects.map((p) => (<li><strong>{p.data.title}</strong> — {p.data.summary}</li>))}</ul><a href="/">Back home</a> · <a href="/papers">Papers</a> · <a href="/media">Media</a></main></body></html>

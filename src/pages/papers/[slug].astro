@@ -1,0 +1,28 @@
+---
+import '../../styles/global.css';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const papers = await getCollection('papers');
+  return papers.map((paper) => ({ params: { slug: paper.slug }, props: { paper } }));
+}
+
+const { paper } = Astro.props;
+const { Content } = await render(paper);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{paper.data.title}</title>
+  </head>
+  <body>
+    <main class="container">
+      <p><a href="/papers">← Back to papers</a></p>
+      <h1>{paper.data.title}</h1>
+      <p>{paper.data.year}{paper.data.venue ? ` · ${paper.data.venue}` : ''}</p>
+      <Content />
+    </main>
+  </body>
+</html>

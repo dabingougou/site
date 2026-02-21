@@ -1,0 +1,29 @@
+---
+import '../styles/global.css';
+import { getCollection } from 'astro:content';
+
+const papers = await getCollection('papers');
+const sorted = papers.sort((a, b) => b.data.year - a.data.year);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Papers</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Papers</h1>
+      <p>Research, but explained like a human.</p>
+      <ul>
+        {sorted.map((p) => (
+          <li>
+            <a href={`/papers/${p.slug}/`}><strong>{p.data.title}</strong></a> ({p.data.year}) — {p.data.summary}
+          </li>
+        ))}
+      </ul>
+      <a href="/">Back home</a>
+    </main>
+  </body>
+</html>

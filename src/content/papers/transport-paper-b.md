@@ -1,30 +1,28 @@
 ---
-title: "Transportation Research Paper B (from CV)"
+title: "Metro heterogeneity and road improvements' impact on VMT"
 year: 2023
-venue: "Transportation Research (Part A/B — fill exact venue)"
-authors: ["Huibin Chang", "(add co-authors)"]
-summary: "Paper summary in plain English: core question, approach, and contribution."
-tags: ["discrete choice", "time series", "policy analysis"]
+venue: "Transportation Research Part A, 175"
+authors: ["Huibin Chang", "Dhwani Indra", "Arijit Maiti"]
+summary: "Shows that road-improvement effects on vehicle miles traveled are heterogeneous across metro areas, so one-size-fits-all policy assumptions can mislead planning."
+tags: ["transportation", "VMT", "heterogeneity", "policy evaluation"]
+links:
+  paper: "https://sciencedirect.com/science/article/abs/pii/S0965856423001532"
 featured: true
 ---
 
 ## One-line takeaway
-Write one sentence a non-specialist can understand.
+Road improvements do not affect driving the same way everywhere; metro context matters a lot.
 
 ## Question
-What did this paper try to explain or predict?
+How do road improvements change vehicle miles traveled (VMT), and why do estimated effects differ so much across metropolitan areas?
 
 ## Method
-Briefly describe model/data/estimation approach.
+The paper analyzes metro-level differences and estimates heterogeneous responses in VMT after road improvements, focusing on how urban form and local conditions change the magnitude/direction of effects.
 
-## Main findings
-- Finding 1
-- Finding 2
-- Finding 3
+## Main findings (plain English)
+- Average effects hide substantial between-metro variation.
+- Some metros show stronger induced-demand patterns than others.
+- Policy design should account for local context, not rely on a single national elasticity.
 
 ## Why this matters
-What should people do differently after seeing these results?
-
-## Visuals to add
-- Figure 1: model intuition diagram
-- Figure 2: headline empirical result
+Transportation planning and emissions strategy depend on realistic VMT responses. A heterogeneity-aware approach improves project evaluation, forecasting, and local policy design.

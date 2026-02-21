@@ -1,30 +1,28 @@
 ---
-title: "Transportation Research Paper A (from CV)"
+title: "Productivity benefits of urban transportation megaprojects"
 year: 2023
-venue: "Transportation Research (Part A/B — fill exact venue)"
-authors: ["Huibin Chang", "(add co-authors)"]
-summary: "Paper summary in plain English: what question was studied, what method was used, and why the result matters."
-tags: ["econometrics", "transportation", "causal inference"]
+venue: "Transportation Research Part B, 174"
+authors: ["Alex Anas", "Huibin Chang"]
+summary: "Quantifies how large urban transportation investments affect economic productivity, with implications for long-horizon infrastructure decisions."
+tags: ["transport economics", "productivity", "infrastructure", "urban economics"]
+links:
+  paper: "https://sciencedirect.com/science/article/abs/pii/S0191261523000474"
 featured: true
 ---
 
 ## One-line takeaway
-Write one sentence a non-specialist can understand.
+Big transportation projects can generate measurable productivity gains, not just travel-time savings.
 
 ## Question
-What decision/problem does this paper study?
+When governments evaluate urban transportation megaprojects, are they missing broader productivity effects that matter for long-run welfare and growth?
 
 ## Method
-What model/identification strategy/data were used?
+This paper develops and applies an urban transportation-economics framework to estimate productivity impacts linked to major network investments. It connects transport system changes to wider economic outcomes rather than stopping at direct mobility metrics.
 
-## Main findings
-- Finding 1
-- Finding 2
-- Finding 3
+## Main findings (plain English)
+- Benefits are broader than commute-time improvements.
+- Productivity channels can materially affect total project value.
+- Ignoring these channels can understate returns from major infrastructure investments.
 
 ## Why this matters
-What changes in practice/policy/business decisions because of this?
-
-## Visuals to add
-- Figure 1: key relationship/effect size
-- Figure 2: robustness or heterogeneity view
+If appraisal frameworks only count narrow travel metrics, decision-makers may underinvest in projects with large economy-wide payoffs. This paper supports a more complete cost-benefit lens for major urban transport policy.

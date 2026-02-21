@@ -2,7 +2,7 @@
 title: "Metro heterogeneity and road improvements' impact on VMT"
 year: 2023
 venue: "Transportation Research Part A, 175"
-authors: ["Huibin Chang", "Dhwani Indra", "Arijit Maiti"]
+authors: ["Huibin Chang", "Debarshi Indra", "Abhradeep Maiti"]
 summary: "Shows that road-improvement effects on vehicle miles traveled are heterogeneous across metro areas, so one-size-fits-all policy assumptions can mislead planning."
 tags: ["transportation", "VMT", "heterogeneity", "policy evaluation"]
 links:

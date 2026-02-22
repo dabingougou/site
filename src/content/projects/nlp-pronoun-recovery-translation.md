@@ -6,6 +6,7 @@ date: 2026-02-21
 links:
   repo: "https://github.com/dabingougou/machine_translation_w266"
   demo: "https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Chang_w266_project_submission.ipynb"
+  report: "https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Huibin_Chang_w266_final_report.pdf"
 featured: true
 ---
 

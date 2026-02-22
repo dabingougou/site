@@ -11,6 +11,7 @@ const projects = defineCollection({
       .object({
         repo: z.string().url().optional(),
         demo: z.string().url().optional(),
+        report: z.string().optional(),
       })
       .optional(),
     featured: z.boolean().default(false),

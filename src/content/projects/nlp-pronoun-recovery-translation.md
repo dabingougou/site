@@ -6,7 +6,7 @@ date: 2026-02-21
 links:
   repo: "https://github.com/dabingougou/machine_translation_w266"
   demo: "https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Chang_w266_project_submission.ipynb"
-  report: "https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Huibin_Chang_w266_final_report.pdf"
+  report: "/files/Huibin_Chang_w266_final_report.pdf"
 featured: true
 ---
 
@@ -32,11 +32,11 @@ I built and tested a two-stage pipeline.
 I evaluated with BLEU, BLEURT, and COMET, and also did qualitative error analysis.
 
 ## Results in plain language
-The fine-tuned pipeline improved translation quality on unseen SMS holdout data and did so without obvious catastrophic forgetting on out-of-domain checks.
+The fine-tuned pipeline improved translation quality on unseen SMS holdout data. In the report, COMET rises from about 0.704 to 0.732 and BLEURT shifts from negative to positive, while out of domain performance stays broadly stable.
 
 A practical takeaway is that even lightweight pronoun recovery can provide useful signal when paired with targeted fine-tuning.
 
 ## Links
 - Repo: [machine_translation_w266](https://github.com/dabingougou/machine_translation_w266)
 - Notebook: [Chang_w266_project_submission.ipynb](https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Chang_w266_project_submission.ipynb)
-- PDF report: [Huibin_Chang_w266_final_report.pdf](https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Huibin_Chang_w266_final_report.pdf)
+- PDF report: [Huibin_Chang_w266_final_report.pdf](/files/Huibin_Chang_w266_final_report.pdf)

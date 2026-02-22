@@ -6,7 +6,7 @@ date: 2026-02-21
 links:
   repo: "https://github.com/dabingougou/machine_translation_w266"
   demo: "https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Chang_w266_project_submission.ipynb"
-  report: "/files/Huibin_Chang_w266_final_report.pdf"
+  report: "/site/files/Huibin_Chang_w266_final_report.pdf"
 featured: true
 ---
 
@@ -39,4 +39,4 @@ A practical takeaway is that even lightweight pronoun recovery can provide usefu
 ## Links
 - Repo: [machine_translation_w266](https://github.com/dabingougou/machine_translation_w266)
 - Notebook: [Chang_w266_project_submission.ipynb](https://github.com/dabingougou/machine_translation_w266/blob/main/final_project_submission/Chang_w266_project_submission.ipynb)
-- PDF report: [Huibin_Chang_w266_final_report.pdf](/files/Huibin_Chang_w266_final_report.pdf)
+- PDF report: [Huibin_Chang_w266_final_report.pdf](/site/files/Huibin_Chang_w266_final_report.pdf)

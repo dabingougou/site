@@ -18,7 +18,7 @@ const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
   <body>
     <main class="container">
       <h1>Papers</h1>
-      <p>These are papers I’ve worked on — quick, plain-English summaries included.</p>
+      <p>These are some selected papers I published.</p>
       <ul>
         {sorted.map((p) => (
           <li>
@@ -41,6 +41,10 @@ const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
             <span>{p.data.summary}</span>
           </li>
         ))}
+      </ul>
+      <h2>Policy Briefs</h2>
+      <ul>
+        <li><strong>Economic Perspectives on Long-Distance Bus Services</strong><br /><span>Single-authored policy brief for a non-technical audience on long-distance bus services in BC, focused on market gaps, rural access, and policy implications.</span></li>
       </ul>
       <a href={base}>Back home</a>
     </main>

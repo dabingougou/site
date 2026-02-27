@@ -3,12 +3,21 @@ import '../styles/global.css';
 const base = import.meta.env.BASE_URL;
 const basePrefix = base.endsWith('/') ? base : base + '/';
 const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
+const cfToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN || "0efd8831b429400cad16a61e9fb30df6";
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Media</title>
+    {cfToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token":"${cfToken}"}`}
+      ></script>
+    )}
+
   </head>
   <body>
     <main class="container">

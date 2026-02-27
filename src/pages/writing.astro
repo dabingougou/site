@@ -5,5 +5,14 @@ const posts = await getCollection('posts', ({ data }) => !data.draft);
 const base = import.meta.env.BASE_URL;
 const basePrefix = base.endsWith('/') ? base : base + '/';
 const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
+const cfToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN || "0efd8831b429400cad16a61e9fb30df6";
 ---
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Writing</title></head><body><main class="container"><h1>Writing</h1><ul>{posts.map((p) => (<li><strong>{p.data.title}</strong> — {p.data.summary}</li>))}</ul><a href={base}>Back home</a> · <a href={href('papers/')}>Papers</a> · <a href={href('media/')}>Media</a></main></body></html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>Writing</title>
+    {cfToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={`{"token":"${cfToken}"}`}
+      ></script>
+    )}
+</head><body><main class="container"><h1>Writing</h1><ul>{posts.map((p) => (<li><strong>{p.data.title}</strong> — {p.data.summary}</li>))}</ul><a href={base}>Back home</a> · <a href={href('papers/')}>Papers</a> · <a href={href('media/')}>Media</a></main></body></html>

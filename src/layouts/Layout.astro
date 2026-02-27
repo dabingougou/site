@@ -1,3 +1,6 @@
+---
+const cfToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN || "0efd8831b429400cad16a61e9fb30df6";
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,11 +10,11 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
-		{import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN && (
+		{cfToken && (
 			<script
 				defer
 				src="https://static.cloudflareinsights.com/beacon.min.js"
-				data-cf-beacon={`{"token":"${import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN}"}`}
+				data-cf-beacon={`{"token":"${cfToken}"}`}
 			></script>
 		)}
 	</head>

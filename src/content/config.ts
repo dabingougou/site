@@ -6,6 +6,7 @@ const projects = defineCollection({
     title: z.string(),
     summary: z.string(),
     tools: z.array(z.string()).default([]),
+    category: z.string().default("Machine Learning"),
     date: z.coerce.date(),
     links: z
       .object({

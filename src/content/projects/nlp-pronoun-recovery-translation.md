@@ -2,6 +2,7 @@
 title: "Improving Chinese-English Translation of Conversational Text"
 summary: "A two-stage pipeline that combines speaker-aware pronoun recovery with mBART fine-tuning to improve Chinese-to-English translation on noisy chat data."
 tools: ["Python", "PyTorch", "Transformers", "mBART", "BLEU", "BLEURT", "COMET"]
+category: "Machine Learning"
 date: 2026-02-21
 links:
   repo: "https://github.com/dabingougou/machine_translation_w266"

@@ -1,5 +1,5 @@
 ---
-const cfToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN || "0efd8831b429400cad16a61e9fb30df6";
+const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-QWP2XJ4VMK";
 ---
 <!doctype html>
 <html lang="en">
@@ -10,12 +10,16 @@ const cfToken = import.meta.env.PUBLIC_CF_WEB_ANALYTICS_TOKEN || "0efd8831b42940
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
-		{cfToken && (
-			<script
-				defer
-				src="https://static.cloudflareinsights.com/beacon.min.js"
-				data-cf-beacon={`{"token":"${cfToken}"}`}
-			></script>
+		{gaId && (
+			<>
+				<script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+				<script is:inline>
+					{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${gaId}');`}
+				</script>
+			</>
 		)}
 	</head>
 	<body>

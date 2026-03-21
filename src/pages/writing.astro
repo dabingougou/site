@@ -11,12 +11,10 @@ const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-QWP2XJ4VMK";
     {gaId && (
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-        <script is:inline>
-          {`window.dataLayer = window.dataLayer || [];
+        <script is:inline set:html={`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${gaId}');`}
-        </script>
+gtag('config', '${gaId}');`}></script>
       </>
     )}
 </head><body><main class="container"><h1>Writing</h1><ul>{posts.map((p) => (<li><strong>{p.data.title}</strong> — {p.data.summary}</li>))}</ul><a href={base}>Back home</a> · <a href={href('papers/')}>Papers</a> · <a href={href('media/')}>Media</a></main></body></html>

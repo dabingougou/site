@@ -12,7 +12,6 @@ const { Content } = await render(paper);
 const base = import.meta.env.BASE_URL;
 const basePrefix = base.endsWith('/') ? base : base + '/';
 const href = (path = '') => basePrefix + String(path).replace(/^\/+/, '');
-const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-QWP2XJ4VMK";
 ---
 
 <html lang="en">
@@ -20,15 +19,16 @@ const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || "G-QWP2XJ4VMK";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{paper.data.title}</title>
-    {gaId && (
-      <>
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
-        <script is:inline set:html={`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${gaId}');`}></script>
-      </>
-    )}
+        <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QWP2XJ4VMK"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QWP2XJ4VMK');
+    </script>
+
 
   </head>
   <body>

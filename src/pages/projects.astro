@@ -17,6 +17,17 @@ const grouped = projects.reduce((acc, p) => {
   return acc;
 }, {});
 
+// Within each category, sort by date desc (most recent first).
+// Featured items still bubble to the top within the category.
+for (const c of Object.keys(grouped)) {
+  grouped[c].sort((a, b) => {
+    if (a.data.featured !== b.data.featured) return a.data.featured ? -1 : 1;
+    const da = new Date(a.data.date).getTime();
+    const db = new Date(b.data.date).getTime();
+    return db - da;
+  });
+}
+
 const orderedCategories = [
   ...categoryOrder.filter((c) => grouped[c]?.length),
   ...Object.keys(grouped).filter((c) => !categoryOrder.includes(c)).sort(),
